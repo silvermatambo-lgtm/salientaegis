@@ -1,0 +1,18 @@
+{
+  "name": "Salient Aegis Group",
+  "short_name": "SAG Security",
+  "description": "Professional security and risk-management enquiries in South Africa",
+  "start_url": "/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#101a28",
+  "theme_color": "#101a28",
+  "icons": [
+    {
+      "src": "/assets/sag-emblem.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any maskable"
+    }
+  ]
+}
