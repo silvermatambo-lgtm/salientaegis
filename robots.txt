@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.salientaegis.co.za/sitemap.xml
