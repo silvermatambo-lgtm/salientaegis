@@ -111,7 +111,7 @@ var chatStage=0,chat={name:'',phone:'',service:'',details:''};
 var questions=['Welcome to SAG. What is your full name?','What contact number should SAG use?','Which service do you need?','Please describe the area, security concern and timeframe.'];
 function bubble(text,mine){var item=el('div','chat-bubble'+(mine?' mine':''),text);log.append(item);log.scrollTop=log.scrollHeight}
 function updateChatForm(){if(!panel)return;
- choices.replaceChildren();chatInput.value='';chatInput.hidden=chatStage===4;
+ choices.replaceChildren();chatInput.value='';chatInput.hidden=chatStage===4;chatInput.required=chatStage<4;
  var send=form.querySelector('[type=submit]');
  if(chatStage<4){prompt.textContent=questions[chatStage];send.textContent='Continue →';
  chatInput.type=chatStage===1?'tel':'text';chatInput.placeholder=chatStage===0?'Full name':chatStage===1?'Contact number':chatStage===2?'Choose or type a service':'Location, concern and timeframe';
